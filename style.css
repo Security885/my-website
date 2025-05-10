@@ -1,37 +1,90 @@
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background: #f4f4f4;
-    color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-header {
-    background: #0077cc;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
 }
-header .btn {
-    background: #fff;
-    color: #0077cc;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
+
+.logo {
+  font-weight: bold;
+  color: #004990;
+  font-size: 24px;
 }
-section {
-    padding: 2rem;
+
+.navbar nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
 }
-form input, form button {
-    display: block;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    width: 100%;
-    max-width: 400px;
+
+.member-btn {
+  background-color: #63b400;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, white 50%, #00b7d4 50%);
+  padding: 50px;
+}
+
+.banking-box {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #0072ce;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.small-links a {
+  color: #0072ce;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.learn-btn {
+  margin-top: 20px;
+  background: #63b400;
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
