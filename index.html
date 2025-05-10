@@ -1,37 +1,44 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Bank Landing Page</title>
-<link href="style.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Joe Bank</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<header class="navbar">
-<div class="logo">Naveen Joe Bank</div>
-<nav>
-<a href="#">Bank</a>
-<a href="#">Borrow</a>
-<a href="#">Invest</a>
-<a href="#">Protect</a>
-<a href="#">About</a>
-<button class="member-btn">Become a Member</button>
-</nav>
-</header>
-<main class="hero">
-<div class="banking-box"><h3>Online Banking</h3><button id="loginToggle" style="margin: 10px 0; padding: 10px; width: 100%; background: #0077e6; color: white; border: none; border-radius: 20px;">Secure Log In</button><div id="loginForm" style="display: none;"><input placeholder="Username" style="display:block; margin: 10px 0; padding:10px; width:100%;" type="text"/><input placeholder="Password" style="display:block; margin: 10px 0; padding:10px; width:100%;" type="password"/></div></div>
-<div class="hero-content">
-<p>Celebrating our 87th anniversary with a higher savings rate!</p>
-<h1>Earn 2.50% APY<sup>63</sup> on your money</h1>
-<button class="learn-btn">Learn more</button>
-</div>
-</main>
-<script>
-document.getElementById("loginToggle").addEventListener("click", function() {
-    var form = document.getElementById("loginForm");
-    form.style.display = form.style.display === "none" ? "block" : "none";
-});
-</script></body>
+    <header>
+        <div class="logo">Naveen Joe Bank</div>
+    </header>
+    <main>
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Log Into My Account</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <div class="options">
+                    <label><input type="checkbox"> Remember Me</label>
+                </div>
+                <button class="login-btn">Sign In</button>
+                <div class="links">
+                    <a href="#">Forgot Username</a> or <a href="#">Forgot Password</a><br>
+                    <span>Don’t have a My Account?</span>
+                    <button class="enroll-btn">Enroll</button>
+                </div>
+            </div>
+            <div class="info-box">
+                <p class="info-text"><strong>Life is simple with My Account</strong><br>
+                Stay warm and cozy with less stress when you use My Account to monitor your energy use, set up high usage alerts, and analyze and pay your bill.</p>
+            </div>
+        </div>
+        <div class="service-menu">
+            <div class="service-item">Pay Bill</div>
+            <div class="service-item">Need Help to Pay?</div>
+            <div class="service-item">Outages</div>
+            <div class="service-item">Landlord Management</div>
+            <div class="service-item">Start Service</div>
+        </div>
+    </main>
+</body>
 </html>

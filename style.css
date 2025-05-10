@@ -1,130 +1,102 @@
 
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #007ac2;
+    color: #000;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px;
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
+header {
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
-
 .logo {
-  font-weight: bold;
-  color: #004990;
-  font-size: 24px;
+    color: #007ac2;
 }
-
-.navbar nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #333;
-}
-
-.member-btn {
-  background-color: #63b400;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(90deg, white 50%, #00b7d4 50%);
-  padding: 50px;
-}
-
-.banking-box {
-  background: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  width: 250px;
-}
-
-.login-btn {
-  width: 100%;
-  background-color: #0072ce;
-  color: white;
-  padding: 10px;
-  border: none;
-  font-weight: bold;
-  border-radius: 20px;
-  cursor: pointer;
-  margin: 10px 0;
-}
-
-.small-links a {
-  color: #0072ce;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.hero-content {
-  max-width: 600px;
-  color: white;
-}
-
-.hero-content h1 {
-  font-size: 36px;
-  margin-top: 10px;
-}
-
-.learn-btn {
-  margin-top: 20px;
-  background: #63b400;
-  padding: 12px 24px;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar nav {
+main {
     display: flex;
     flex-direction: column;
-    width: 100%;
-  }
-
-  .navbar nav a, .member-btn {
-    margin: 10px 0;
-  }
-
-  .hero {
-    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    background: linear-gradient(180deg, white 50%, #00b7d4 50%);
-  }
-
-  .banking-box {
-    width: 100%;
+}
+.login-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     margin-bottom: 20px;
-  }
-
-  .hero-content {
+    width: 90%;
+    max-width: 1000px;
+}
+.login-box {
+    flex: 1 1 300px;
+    padding: 20px;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
     width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.login-btn,
+.enroll-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007ac2;
     color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.options, .links {
+    margin: 10px 0;
+}
+.info-box {
+    flex: 1 1 300px;
+    padding: 20px;
+    background: url('https://via.placeholder.com/400x300') center/cover no-repeat;
+    color: white;
+    position: relative;
+}
+.info-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+}
+.service-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.service-item {
+    margin: 10px;
+    padding: 15px 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-width: 150px;
     text-align: center;
-  }
-
-  .hero-content h1 {
-    font-size: 28px;
-  }
+}
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+    .info-text {
+        position: static;
+        background: none;
+        color: black;
+    }
 }
