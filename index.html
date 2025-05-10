@@ -21,20 +21,17 @@
 </nav>
 </header>
 <main class="hero">
-<div class="banking-box">
-<h2>Online Banking</h2>
-<button class="login-btn">Secure Log In</button><input placeholder="Username" style="display:block; margin: 10px 0; padding:10px; width:100%;" type="text"/><input placeholder="Password" style="display:block; margin: 10px 0; padding:10px; width:100%;" type="password"/>
-<div class="small-links">
-<a href="#">Forgot username/password?</a><br/>
-<a href="#">Set up in 1 Minute</a> |
-        <a href="#">Security Center</a>
-</div>
-</div>
+<div class="banking-box"><h3>Online Banking</h3><button id="loginToggle" style="margin: 10px 0; padding: 10px; width: 100%; background: #0077e6; color: white; border: none; border-radius: 20px;">Secure Log In</button><div id="loginForm" style="display: none;"><input placeholder="Username" style="display:block; margin: 10px 0; padding:10px; width:100%;" type="text"/><input placeholder="Password" style="display:block; margin: 10px 0; padding:10px; width:100%;" type="password"/></div></div>
 <div class="hero-content">
 <p>Celebrating our 87th anniversary with a higher savings rate!</p>
 <h1>Earn 2.50% APY<sup>63</sup> on your money</h1>
 <button class="learn-btn">Learn more</button>
 </div>
 </main>
-</body>
+<script>
+document.getElementById("loginToggle").addEventListener("click", function() {
+    var form = document.getElementById("loginForm");
+    form.style.display = form.style.display === "none" ? "block" : "none";
+});
+</script></body>
 </html>
